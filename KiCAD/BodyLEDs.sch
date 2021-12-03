@@ -1,0 +1,311 @@
+EESchema Schematic File Version 4
+LIBS:board-cache
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 3 3
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L LED:WS2812B D?
+U 1 1 61808346
+P 2850 2900
+AR Path="/61808346" Ref="D?"  Part="1" 
+AR Path="/618051D6/61808346" Ref="D?"  Part="1" 
+AR Path="/61808137/61808346" Ref="D301"  Part="1" 
+F 0 "D301" H 3191 2946 50  0000 L CNN
+F 1 "C965555" H 3191 2855 50  0000 L CNN
+F 2 "XasPrints:WS2812B-2020" H 2900 2600 50  0001 L TNN
+F 3 "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf" H 2950 2525 50  0001 L TNN
+F 4 "C965555" H 2850 2900 50  0001 C CNN "JLCPART"
+	1    2850 2900
+	1    0    0    -1  
+$EndComp
+$Comp
+L LED:WS2812B D?
+U 1 1 6180847D
+P 4150 2900
+AR Path="/6180847D" Ref="D?"  Part="1" 
+AR Path="/618051D6/6180847D" Ref="D?"  Part="1" 
+AR Path="/61808137/6180847D" Ref="D302"  Part="1" 
+F 0 "D302" H 4491 2946 50  0000 L CNN
+F 1 "C965555" H 4491 2855 50  0000 L CNN
+F 2 "XasPrints:WS2812B-2020" H 4200 2600 50  0001 L TNN
+F 3 "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf" H 4250 2525 50  0001 L TNN
+F 4 "C965555" H 4150 2900 50  0001 C CNN "JLCPART"
+	1    4150 2900
+	1    0    0    -1  
+$EndComp
+$Comp
+L LED:WS2812B D?
+U 1 1 61808517
+P 5150 2900
+AR Path="/61808517" Ref="D?"  Part="1" 
+AR Path="/618051D6/61808517" Ref="D?"  Part="1" 
+AR Path="/61808137/61808517" Ref="D303"  Part="1" 
+F 0 "D303" H 5491 2946 50  0000 L CNN
+F 1 "C965555" H 5491 2855 50  0000 L CNN
+F 2 "XasPrints:WS2812B-2020" H 5200 2600 50  0001 L TNN
+F 3 "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf" H 5250 2525 50  0001 L TNN
+F 4 "C965555" H 5150 2900 50  0001 C CNN "JLCPART"
+	1    5150 2900
+	1    0    0    -1  
+$EndComp
+$Comp
+L LED:WS2812B D?
+U 1 1 61808591
+P 6150 2900
+AR Path="/61808591" Ref="D?"  Part="1" 
+AR Path="/618051D6/61808591" Ref="D?"  Part="1" 
+AR Path="/61808137/61808591" Ref="D304"  Part="1" 
+F 0 "D304" H 6491 2946 50  0000 L CNN
+F 1 "C965555" H 6491 2855 50  0000 L CNN
+F 2 "XasPrints:WS2812B-2020" H 6200 2600 50  0001 L TNN
+F 3 "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf" H 6250 2525 50  0001 L TNN
+F 4 "C965555" H 6150 2900 50  0001 C CNN "JLCPART"
+	1    6150 2900
+	1    0    0    -1  
+$EndComp
+$Comp
+L LED:WS2812B D?
+U 1 1 61808665
+P 7250 2900
+AR Path="/61808665" Ref="D?"  Part="1" 
+AR Path="/618051D6/61808665" Ref="D?"  Part="1" 
+AR Path="/61808137/61808665" Ref="D305"  Part="1" 
+F 0 "D305" H 7591 2946 50  0000 L CNN
+F 1 "C965555" H 7591 2855 50  0000 L CNN
+F 2 "XasPrints:WS2812B-2020" H 7300 2600 50  0001 L TNN
+F 3 "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf" H 7350 2525 50  0001 L TNN
+F 4 "C965555" H 7250 2900 50  0001 C CNN "JLCPART"
+	1    7250 2900
+	1    0    0    -1  
+$EndComp
+$Comp
+L LED:WS2812B D?
+U 1 1 6180875B
+P 9200 2900
+AR Path="/6180875B" Ref="D?"  Part="1" 
+AR Path="/618051D6/6180875B" Ref="D?"  Part="1" 
+AR Path="/61808137/6180875B" Ref="D306"  Part="1" 
+F 0 "D306" H 9541 2946 50  0000 L CNN
+F 1 "C965555" H 9541 2855 50  0000 L CNN
+F 2 "XasPrints:WS2812B-2020" H 9250 2600 50  0001 L TNN
+F 3 "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf" H 9300 2525 50  0001 L TNN
+F 4 "C965555" H 9200 2900 50  0001 C CNN "JLCPART"
+	1    9200 2900
+	1    0    0    -1  
+$EndComp
+$Comp
+L LED:WS2812B D?
+U 1 1 618088A5
+P 10150 2900
+AR Path="/618088A5" Ref="D?"  Part="1" 
+AR Path="/618051D6/618088A5" Ref="D?"  Part="1" 
+AR Path="/61808137/618088A5" Ref="D307"  Part="1" 
+F 0 "D307" H 10491 2946 50  0000 L CNN
+F 1 "C965555" H 10491 2855 50  0000 L CNN
+F 2 "XasPrints:WS2812B-2020" H 10200 2600 50  0001 L TNN
+F 3 "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf" H 10250 2525 50  0001 L TNN
+F 4 "C965555" H 10150 2900 50  0001 C CNN "JLCPART"
+	1    10150 2900
+	1    0    0    -1  
+$EndComp
+$Comp
+L LED:WS2812B D?
+U 1 1 6183F734
+P 2850 4000
+AR Path="/6183F734" Ref="D?"  Part="1" 
+AR Path="/618051D6/6183F734" Ref="D?"  Part="1" 
+AR Path="/61808137/6183F734" Ref="D308"  Part="1" 
+F 0 "D308" H 3191 4046 50  0000 L CNN
+F 1 "C965555" H 3191 3955 50  0000 L CNN
+F 2 "XasPrints:WS2812B-2020" H 2900 3700 50  0001 L TNN
+F 3 "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf" H 2950 3625 50  0001 L TNN
+F 4 "C965555" H 2850 4000 50  0001 C CNN "JLCPART"
+	1    2850 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L LED:WS2812B D?
+U 1 1 6183FC61
+P 4000 4000
+AR Path="/6183FC61" Ref="D?"  Part="1" 
+AR Path="/618051D6/6183FC61" Ref="D?"  Part="1" 
+AR Path="/61808137/6183FC61" Ref="D309"  Part="1" 
+F 0 "D309" H 4341 4046 50  0000 L CNN
+F 1 "C965555" H 4341 3955 50  0000 L CNN
+F 2 "XasPrints:WS2812B-2020" H 4050 3700 50  0001 L TNN
+F 3 "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf" H 4100 3625 50  0001 L TNN
+F 4 "C965555" H 4000 4000 50  0001 C CNN "JLCPART"
+	1    4000 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L LED:WS2812B D?
+U 1 1 6183FEB8
+P 5150 4000
+AR Path="/6183FEB8" Ref="D?"  Part="1" 
+AR Path="/618051D6/6183FEB8" Ref="D?"  Part="1" 
+AR Path="/61808137/6183FEB8" Ref="D310"  Part="1" 
+F 0 "D310" H 5491 4046 50  0000 L CNN
+F 1 "C965555" H 5491 3955 50  0000 L CNN
+F 2 "XasPrints:WS2812B-2020" H 5200 3700 50  0001 L TNN
+F 3 "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf" H 5250 3625 50  0001 L TNN
+F 4 "C965555" H 5150 4000 50  0001 C CNN "JLCPART"
+	1    5150 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L LED:WS2812B D?
+U 1 1 61840EA8
+P 8200 2900
+AR Path="/61840EA8" Ref="D?"  Part="1" 
+AR Path="/618051D6/61840EA8" Ref="D?"  Part="1" 
+AR Path="/61808137/61840EA8" Ref="D312"  Part="1" 
+F 0 "D312" H 8541 2946 50  0000 L CNN
+F 1 "C965555" H 8541 2855 50  0000 L CNN
+F 2 "XasPrints:WS2812B-2020" H 8250 2600 50  0001 L TNN
+F 3 "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf" H 8300 2525 50  0001 L TNN
+F 4 "C965555" H 8200 2900 50  0001 C CNN "JLCPART"
+	1    8200 2900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2850 2600 4150 2600
+Connection ~ 4150 2600
+Wire Wire Line
+	4150 2600 5150 2600
+Connection ~ 5150 2600
+Wire Wire Line
+	5150 2600 6150 2600
+Connection ~ 6150 2600
+Wire Wire Line
+	6150 2600 7250 2600
+Connection ~ 7250 2600
+Wire Wire Line
+	7250 2600 8200 2600
+Connection ~ 8200 2600
+Wire Wire Line
+	8200 2600 9200 2600
+Connection ~ 9200 2600
+Wire Wire Line
+	9200 2600 10150 2600
+Wire Wire Line
+	10150 3200 9200 3200
+Connection ~ 4150 3200
+Wire Wire Line
+	4150 3200 2850 3200
+Connection ~ 5150 3200
+Wire Wire Line
+	5150 3200 4150 3200
+Connection ~ 6150 3200
+Wire Wire Line
+	6150 3200 5150 3200
+Connection ~ 7250 3200
+Wire Wire Line
+	7250 3200 6150 3200
+Connection ~ 8200 3200
+Wire Wire Line
+	8200 3200 7250 3200
+Connection ~ 9200 3200
+Wire Wire Line
+	9200 3200 8200 3200
+$Comp
+L power:GND #PWR0119
+U 1 1 6185910F
+P 6150 3300
+F 0 "#PWR0119" H 6150 3050 50  0001 C CNN
+F 1 "GND" H 6155 3127 50  0000 C CNN
+F 2 "" H 6150 3300 50  0001 C CNN
+F 3 "" H 6150 3300 50  0001 C CNN
+	1    6150 3300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6150 3200 6150 3300
+$Comp
+L power:+5V #PWR0120
+U 1 1 6185956C
+P 6150 2500
+F 0 "#PWR0120" H 6150 2350 50  0001 C CNN
+F 1 "+5V" H 6165 2673 50  0000 C CNN
+F 2 "" H 6150 2500 50  0001 C CNN
+F 3 "" H 6150 2500 50  0001 C CNN
+	1    6150 2500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6150 2500 6150 2600
+Wire Wire Line
+	2850 4300 4000 4300
+Connection ~ 4000 4300
+Wire Wire Line
+	4000 4300 5150 4300
+Wire Wire Line
+	5150 3700 4000 3700
+Connection ~ 4000 3700
+Wire Wire Line
+	4000 3700 2850 3700
+$Comp
+L power:GND #PWR0121
+U 1 1 61859B48
+P 4000 4300
+F 0 "#PWR0121" H 4000 4050 50  0001 C CNN
+F 1 "GND" H 4005 4127 50  0000 C CNN
+F 2 "" H 4000 4300 50  0001 C CNN
+F 3 "" H 4000 4300 50  0001 C CNN
+	1    4000 4300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0122
+U 1 1 61859BA0
+P 4000 3700
+F 0 "#PWR0122" H 4000 3550 50  0001 C CNN
+F 1 "+5V" H 4015 3873 50  0000 C CNN
+F 2 "" H 4000 3700 50  0001 C CNN
+F 3 "" H 4000 3700 50  0001 C CNN
+	1    4000 3700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3150 4000 3700 4000
+Wire Wire Line
+	4300 4000 4850 4000
+Wire Wire Line
+	10450 2900 10950 2900
+Text Label 10950 2900 2    50   ~ 0
+ROW2
+Text Label 2250 4000 0    50   ~ 0
+ROW2
+Wire Wire Line
+	2250 4000 2550 4000
+Wire Wire Line
+	3150 2900 3850 2900
+Wire Wire Line
+	4450 2900 4850 2900
+Wire Wire Line
+	5450 2900 5850 2900
+Wire Wire Line
+	6450 2900 6950 2900
+Wire Wire Line
+	7550 2900 7900 2900
+Wire Wire Line
+	8500 2900 8900 2900
+Wire Wire Line
+	9500 2900 9850 2900
+Text HLabel 2400 2900 0    50   Input ~ 0
+IN
+Wire Wire Line
+	2400 2900 2550 2900
+NoConn ~ 5450 4000
+$EndSCHEMATC

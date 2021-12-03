@@ -1,0 +1,5 @@
+(fp_lib_table
+  (lib (name XasPrints)(type KiCad)(uri ${KIPRJMOD}/../XasCode/KiCAD/XasPrints.pretty)(options "")(descr ""))
+  (lib (name locals)(type KiCad)(uri ${KIPRJMOD}/locals.pretty)(options "")(descr ""))
+  (lib (name SOICBite)(type KiCad)(uri ${KIPRJMOD}/SOICBite.pretty)(options "")(descr ""))
+)

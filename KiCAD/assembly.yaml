@@ -1,0 +1,26 @@
+
+
+netlist: board.xml
+positionlist: Gerbers/board-all-pos.csv
+generate:
+  bom: Assembly/jlc_bom.csv
+  cpl: Assembly/jlc_cpl.csv
+component_selection:
+  10k 0402: C25744
+  10nF 0402: C15195
+  KXT 331 LHS: C221822
+parts_config:
+  footprints:
+    WS2812B-2020:
+      r: 180
+    USB_C_Receptacle_HRO_TYPE-C-31-M-12:
+      r: 180
+      dy: -1.6
+    SOT-223:
+      r: -90
+    SOT23-6L:
+      r: -90
+    WSOF5:
+      r: 90
+    SW_SPST_CK_KXT3:
+      r: 90

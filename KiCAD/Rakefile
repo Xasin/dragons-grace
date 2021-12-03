@@ -1,0 +1,101 @@
+require 'yaml'
+
+PRJNAME = "board"
+
+GERBER_DIR = "Gerbers"
+
+def gen_gerblist
+	out = [];
+
+	gerber_targets = [
+		"B.Cu.gbr",
+		"B.Fab.gbr",
+		"B.Mask.gbr",
+		"B.Paste.gbr",
+		"B.SilkS.gbr",
+		"Edge.Cuts.gbr",
+		"F.Cu.gbr",
+		"F.Fab.gbr",
+		"F.Mask.gbr",
+		"F.Paste.gbr",
+		"F.SilkS.gbr",
+		"NPTH-drl_map.ps",
+		"PTH-drl_map.ps",
+		"NPTH.drl",
+		"PTH.drl"
+	];
+
+	gerber_targets.each do |t|
+		out << File.join(GERBER_DIR, PRJNAME + "-" + t);
+	end
+
+	out;
+end 
+
+GERBERS = gen_gerblist();
+SCHEMATICS = FileList['*.sch'];
+
+task :clean do
+	sh 'rm -f Gerbers/* *.xml *_jlc.csv'
+end
+
+def is_ok(name)
+	return File.exist?(name) && (File.atime(name) >= File.atime("#{PRJNAME}.kicad_pcb"))
+end
+
+GERBERS.each do |g|
+	file g => "#{PRJNAME}.kicad_pcb" do |task|
+
+		next if is_ok(task.name)
+		
+		sh "rm -f #{task.name}"
+		puts "\n => File #{task.name} missing or not recent, please re-generate!"
+
+		while !is_ok(task.name)
+			sleep 1
+		end 
+	end
+end
+
+file "#{PRJNAME}.kicad_pcb" => SCHEMATICS do |task|
+	old_atime = File.mtime(task.name);
+
+	puts "\n => KiCAD PCB out of date, please include schematic changes!"
+
+	while File.mtime(task.name) <= old_atime
+		sleep 1
+	end
+end
+
+file "#{PRJNAME}.xml" => SCHEMATICS do |task|
+	old_atime = File.mtime(task.name);
+
+	puts "\n => Schematic BOM out of date, please re-generate!"
+
+	while File.mtime(task.name) <= old_atime
+		sleep 1
+	end
+end
+
+file "Gerbers/#{PRJNAME}-all-pos.csv" => "#{PRJNAME}.kicad_pcb" do |task|
+	old_atime = File.mtime(task.name);
+
+	puts "\n => Position file is out of date, please re-generate!"
+
+	while File.mtime(task.name) <= old_atime
+		sleep 1
+	end
+end
+
+file "#{PRJNAME}_gerbers.zip" => GERBERS do
+	sh "rm -f #{PRJNAME}_gerbers.zip"
+	sh "zip #{PRJNAME}_gerbers.zip #{GERBERS.join(" ")}"
+end
+
+task :jlc_assembly => [ "Gerbers/#{PRJNAME}-all-pos.csv", "#{PRJNAME}.xml", "assembly.yaml" ] do
+	require_relative 'assembly_parse.rb'
+
+	AssemblyParser.from_config(YAML.load(File.read('assembly.yaml')))
+end
+
+task :all => [:jlc_assembly, "#{PRJNAME}_gerbers.zip"]
