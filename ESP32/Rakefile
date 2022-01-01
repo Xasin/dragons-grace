@@ -68,9 +68,9 @@ end
 task :push => [ :build ] do
 	raise "Build version required!" if(BUILD_VERS.nil?)
 
-	sh "scp build/#{PROJECT_NAME}.bin root@xaseiresh.hopto.org:/var/esp_ota/#{PROJECT_NAME}/#{BRANCH}.bin"
+	sh "scp -P 42 build/#{PROJECT_NAME}.bin root@xaseiresh.hopto.org:/var/esp_ota/#{PROJECT_NAME}/#{BRANCH}.bin"
 
-	sh "ssh root@xaseiresh.hopto.org \"echo #{BUILD_VERS} > /var/esp_ota/#{PROJECT_NAME}/main.vers\""
+	sh "ssh -p 42 root@xaseiresh.hopto.org \"echo #{BUILD_VERS} > /var/esp_ota/#{PROJECT_NAME}/main.vers\""
 	sh "mosquitto_pub -h xaseiresh.hopto.org -t /esp32/#{PROJECT_NAME}/ota/#{BRANCH} -m #{BUILD_VERS}"
 end
 
