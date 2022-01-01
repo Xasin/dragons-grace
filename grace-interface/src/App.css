@@ -1,0 +1,61 @@
+
+.App {
+  background-color: #26282c;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: top;
+
+  font-size: calc(6px + 1.2vmin);
+  color: white;
+
+  padding-left: 30px;
+
+  overflow-x: hidden;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+button {
+  border-radius: 3vmin;
+  border-color: azure;
+
+  background-color: #4d5057;
+  color: azure;
+
+  width: 30vmin;
+  font-size: calc(6px + 1vmin);
+}
+
+.ChatWindow {
+  font-size: large;
+}
+.ChatWindow p {
+  margin-top: 5px;
+  margin-bottom: 8px;
+}
+.ChatWindow h1 {
+  font-size: 23px;
+}
+
+.ChatWindow>* {
+  animation: fadeInwards 2s ease-out;
+}
+.ChatWindow li {
+  animation: fadeInwards 2s ease-out;
+}
+
+@keyframes fadeInwards {
+  0% {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
